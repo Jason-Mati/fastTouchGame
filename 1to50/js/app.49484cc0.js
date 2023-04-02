@@ -67,13 +67,7 @@ $(function () {
     },
     l = function () {
       clearInterval(s);
-      var e = getRedirectResultPageURL(resultTime),
-        t = $("#resultLink");
-      t.attr("href", e),
-        $("#grid").append(t),
-        setTimeout(function () {
-          document.querySelector("#resultLink").click();
-        }, 500);
+      alert(`당신의 기록은!! : ${resultTime}`);
     };
   (location.hash = ""), n(), a();
 });
